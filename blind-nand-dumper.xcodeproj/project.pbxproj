@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		874DC75F2CB4034D0027B90F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 874DC75B2CB4034D0027B90F /* main.cpp */; };
+		874DC7602CB4034D0027B90F /* PicoNandReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 874DC75D2CB4034D0027B90F /* PicoNandReader.cpp */; };
+		874DC7632CB4038C0027B90F /* libgeneral.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 874DC7622CB4038C0027B90F /* libgeneral.0.dylib */; };
+		874DC7642CB4038C0027B90F /* libgeneral.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 874DC7622CB4038C0027B90F /* libgeneral.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		874DC7672CB403B90027B90F /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 874DC7662CB403B90027B90F /* libusb-1.0.0.dylib */; };
+		874DC7682CB403B90027B90F /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 874DC7662CB403B90027B90F /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8790DCAC2CB8527E00AA08B6 /* ECCCorrection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8790DCAB2CB8527E00AA08B6 /* ECCCorrection.cpp */; };
+		8790DCB02CB8660700AA08B6 /* linux_bch.c in Sources */ = {isa = PBXBuildFile; fileRef = 8790DCAF2CB8660700AA08B6 /* linux_bch.c */; };
+		8790DCB32CB866CD00AA08B6 /* bitrev.c in Sources */ = {isa = PBXBuildFile; fileRef = 8790DCB22CB866CD00AA08B6 /* bitrev.c */; };
+		8790DCB62CB92D2E00AA08B6 /* FileMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8790DCB52CB92D2E00AA08B6 /* FileMapping.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		874DC7492CB401E80027B90F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		874DC7652CB4038C0027B90F /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				874DC7642CB4038C0027B90F /* libgeneral.0.dylib in Embed Libraries */,
+				874DC7682CB403B90027B90F /* libusb-1.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		870328512CB42B7000DE6C28 /* PNR-proto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNR-proto.h"; sourceTree = "<group>"; };
+		874DC74B2CB401E80027B90F /* blind-nand-dumper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "blind-nand-dumper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		874DC75B2CB4034D0027B90F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		874DC75C2CB4034D0027B90F /* PicoNandReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PicoNandReader.hpp; sourceTree = "<group>"; };
+		874DC75D2CB4034D0027B90F /* PicoNandReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PicoNandReader.cpp; sourceTree = "<group>"; };
+		874DC7622CB4038C0027B90F /* libgeneral.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgeneral.0.dylib; path = ../../../../usr/local/lib/libgeneral.0.dylib; sourceTree = "<group>"; };
+		874DC7662CB403B90027B90F /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libusb-1.0.0.dylib"; path = "../../../../opt/homebrew/Cellar/libusb/1.0.27/lib/libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		8790DCAA2CB8527E00AA08B6 /* ECCCorrection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ECCCorrection.hpp; sourceTree = "<group>"; };
+		8790DCAB2CB8527E00AA08B6 /* ECCCorrection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ECCCorrection.cpp; sourceTree = "<group>"; };
+		8790DCAE2CB8660700AA08B6 /* linux_bch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linux_bch.h; sourceTree = "<group>"; };
+		8790DCAF2CB8660700AA08B6 /* linux_bch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linux_bch.c; sourceTree = "<group>"; };
+		8790DCB12CB866CD00AA08B6 /* bitrev.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitrev.h; sourceTree = "<group>"; };
+		8790DCB22CB866CD00AA08B6 /* bitrev.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bitrev.c; sourceTree = "<group>"; };
+		8790DCB42CB92D2E00AA08B6 /* FileMapping.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileMapping.hpp; sourceTree = "<group>"; };
+		8790DCB52CB92D2E00AA08B6 /* FileMapping.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileMapping.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		874DC7482CB401E80027B90F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874DC7632CB4038C0027B90F /* libgeneral.0.dylib in Frameworks */,
+				874DC7672CB403B90027B90F /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		874DC7422CB401E80027B90F = {
+			isa = PBXGroup;
+			children = (
+				874DC75E2CB4034D0027B90F /* blind-nand-dumper */,
+				874DC7612CB4038C0027B90F /* Frameworks */,
+				874DC74C2CB401E80027B90F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		874DC74C2CB401E80027B90F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				874DC74B2CB401E80027B90F /* blind-nand-dumper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		874DC75E2CB4034D0027B90F /* blind-nand-dumper */ = {
+			isa = PBXGroup;
+			children = (
+				8790DCAD2CB865FA00AA08B6 /* external */,
+				870328512CB42B7000DE6C28 /* PNR-proto.h */,
+				874DC75C2CB4034D0027B90F /* PicoNandReader.hpp */,
+				874DC75D2CB4034D0027B90F /* PicoNandReader.cpp */,
+				8790DCB42CB92D2E00AA08B6 /* FileMapping.hpp */,
+				8790DCB52CB92D2E00AA08B6 /* FileMapping.cpp */,
+				8790DCAA2CB8527E00AA08B6 /* ECCCorrection.hpp */,
+				8790DCAB2CB8527E00AA08B6 /* ECCCorrection.cpp */,
+				874DC75B2CB4034D0027B90F /* main.cpp */,
+			);
+			path = "blind-nand-dumper";
+			sourceTree = "<group>";
+		};
+		874DC7612CB4038C0027B90F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				874DC7662CB403B90027B90F /* libusb-1.0.0.dylib */,
+				874DC7622CB4038C0027B90F /* libgeneral.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8790DCAD2CB865FA00AA08B6 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				8790DCAE2CB8660700AA08B6 /* linux_bch.h */,
+				8790DCAF2CB8660700AA08B6 /* linux_bch.c */,
+				8790DCB12CB866CD00AA08B6 /* bitrev.h */,
+				8790DCB22CB866CD00AA08B6 /* bitrev.c */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		874DC74A2CB401E80027B90F /* blind-nand-dumper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874DC7522CB401E80027B90F /* Build configuration list for PBXNativeTarget "blind-nand-dumper" */;
+			buildPhases = (
+				874DC7472CB401E80027B90F /* Sources */,
+				874DC7482CB401E80027B90F /* Frameworks */,
+				874DC7492CB401E80027B90F /* CopyFiles */,
+				874DC7652CB4038C0027B90F /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "blind-nand-dumper";
+			packageProductDependencies = (
+			);
+			productName = "blind-nand-dumper";
+			productReference = 874DC74B2CB401E80027B90F /* blind-nand-dumper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		874DC7432CB401E80027B90F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					874DC74A2CB401E80027B90F = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 874DC7462CB401E80027B90F /* Build configuration list for PBXProject "blind-nand-dumper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 874DC7422CB401E80027B90F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 874DC74C2CB401E80027B90F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				874DC74A2CB401E80027B90F /* blind-nand-dumper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		874DC7472CB401E80027B90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8790DCB32CB866CD00AA08B6 /* bitrev.c in Sources */,
+				8790DCB02CB8660700AA08B6 /* linux_bch.c in Sources */,
+				8790DCB62CB92D2E00AA08B6 /* FileMapping.cpp in Sources */,
+				874DC75F2CB4034D0027B90F /* main.cpp in Sources */,
+				874DC7602CB4034D0027B90F /* PicoNandReader.cpp in Sources */,
+				8790DCAC2CB8527E00AA08B6 /* ECCCorrection.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		874DC7502CB401E80027B90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		874DC7512CB401E80027B90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		874DC7532CB401E80027B90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					XCODE,
+					HAVE_FLS,
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/opt/homebrew/Cellar/libusb/1.0.27/include/libusb-1.0",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/homebrew/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		874DC7542CB401E80027B90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/opt/homebrew/Cellar/libusb/1.0.27/include/libusb-1.0",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/homebrew/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		874DC7462CB401E80027B90F /* Build configuration list for PBXProject "blind-nand-dumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874DC7502CB401E80027B90F /* Debug */,
+				874DC7512CB401E80027B90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		874DC7522CB401E80027B90F /* Build configuration list for PBXNativeTarget "blind-nand-dumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874DC7532CB401E80027B90F /* Debug */,
+				874DC7542CB401E80027B90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 874DC7432CB401E80027B90F /* Project object */;
+}
